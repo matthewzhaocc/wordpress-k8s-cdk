@@ -10,7 +10,7 @@
     "synth": "cdk8s synth",
     "compile": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
+    "test": "",
     "build": "npm run compile && npm run test && npm run synth",
     "upgrade": "npm i cdk8s@latest cdk8s-cli@latest",
     "upgrade:next": "npm i cdk8s@next cdk8s-cli@next"
@@ -18,11 +18,13 @@
   "dependencies": {
     "cdk8s": "^1.2.3",
     "cdk8s-plus-22": "^1.0.0-beta.55",
-    "constructs": "^3.3.162"
+    "constructs": "^3.3.162",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/jest": "^26.0.24",
     "@types/node": "^14.18.0",
+    "@types/uuid": "^8.3.3",
     "cdk8s-cli": "^1.0.44",
     "jest": "^26.6.3",
     "ts-jest": "^26.5.6",
